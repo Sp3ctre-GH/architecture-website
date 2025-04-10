@@ -3,8 +3,6 @@ package com.example.architecture.controllers;
 import com.example.architecture.models.User;
 import com.example.architecture.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -48,7 +46,6 @@ public class UserController {
     public String login()        {
         return "login";
     }
-
 
 
     @GetMapping("/home")
