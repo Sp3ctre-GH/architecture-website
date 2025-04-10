@@ -1,0 +1,179 @@
+/* ====== Базові стилі ====== */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ====== Фонове зображення ====== */
+.background-image {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ====== Контейнер авторизації ====== */
+.auth-container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    width: 360px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ====== Форма ====== */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* ====== Поля вводу з іконками ====== */
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.auth-form input {
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.auth-form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* ====== Кнопка входу ====== */
+.auth-form button[type="submit"] {
+    background-color: #000;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.auth-form button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* ====== Посилання ====== */
+.auth-container p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+.auth-container p a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.auth-container p a:hover {
+    color: #1e88e5;
+    text-decoration: underline;
+}
+
+/* ====== Іконка для показу пароля всередині поля вводу ====== */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ====== Реєстраційна форма ====== */
+.auth-page .auth-container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    width: 360px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page .auth-container h2 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.auth-page .auth-form input {
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-page .auth-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.auth-page .auth-form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
